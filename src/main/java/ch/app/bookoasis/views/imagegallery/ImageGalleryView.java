@@ -13,6 +13,7 @@ import com.vaadin.flow.component.select.Select;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.router.RouteAlias;
+import com.vaadin.flow.server.auth.AnonymousAllowed;
 import com.vaadin.flow.theme.lumo.LumoUtility.AlignItems;
 import com.vaadin.flow.theme.lumo.LumoUtility.Display;
 import com.vaadin.flow.theme.lumo.LumoUtility.FontSize;
@@ -27,6 +28,7 @@ import com.vaadin.flow.theme.lumo.LumoUtility.TextColor;
 @PageTitle("Image Gallery")
 @Route(value = "image-gallery", layout = MainLayout.class)
 @RouteAlias(value = "", layout = MainLayout.class)
+@AnonymousAllowed
 public class ImageGalleryView extends Main implements HasComponents, HasStyle {
 
     private OrderedList imageContainer;
